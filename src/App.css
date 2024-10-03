@@ -44,3 +44,102 @@
     transform: rotate(360deg);
   }
 }
+/* App Styles */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+/* Flexbox Layout */
+.App-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.character-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Section Card Styles */
+.section-card {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 10px;
+  max-width: 300px;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .section-card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-card {
+    width: 100%;
+  }
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Character Section Styles */
+.character-section {
+  margin-bottom: 20px;
+}
+
+.attribute-row,
+.class-button {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Additional Section Styles */
+.requirements-section {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #008CBA;
+  border-radius: 5px;
+  background-color: #e0f7fa;
+}
+
+.highlight {
+  background-color: lightgreen;
+  border: 2px solid green;
+}
+
+/* Card Content */
+.card-content li {
+  list-style: none;
+}
